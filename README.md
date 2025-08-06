@@ -41,9 +41,9 @@
 |   ├── syusei.html // 修正ありの面接ページ用html
 |   ├── loginPage.html // ログインページ用html
 |   ├── registerPage.html // 新規登録ページ用html
-|   ├── server.js // 
-|   ├── package-lock.json //
-|   ├── package.json //
+|   ├── server.js // バックエンドサーバー
+|   ├── package-lock.json //  プロジェクトの依存関係
+|   ├── package.json // プロジェクトのメタデータ
 |   ├── users.txt    // ユーザー・パスワード管理用
 └──
 ```
