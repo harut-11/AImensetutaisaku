@@ -73,6 +73,8 @@
 
     ```bash
     npm install
+
+    npm install express
     ```
 
 3.  **.envファイルの設定**
