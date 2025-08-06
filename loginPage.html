@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ログイン</title>
+  <link rel="stylesheet" href="css/loginPage.css"> 
+</head>
+<body>
+  <div id="modalOverlay" class="modal-overlay" style="display:none;"></div>
+
+  <div id="operationModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <h1>利用規約</h1>
+    <div class="modal-body" id ="modalBody">
+        <h2>1.利用環境について</h2>
+        <p>・安定したインターネット接続が必要です。</p>
+        <p>・推奨ブラウザはGoogle Chromeで全画面でお使いください。</p>
+        <p>・騒音の多い場所や通信が不安定な環境では正確に動作しない場合があります。</p>
+        <h2>2.プライバシー・個人情報の取り扱いについて</h2>
+        <p>・本サービスでは、ユーザーの個人情報を収集しません。</p>
+        <p>・ユーザー名とパスワードは、ログイン認証のみに使用されます。</p>
+        <h2>3.禁止事項について</h2>
+        <p>・他のユーザーの個人情報を不正に取得する行為は禁止です。</p>
+        <p>・不正なログイン試行やサービスの妨害行為は禁止です。</p>
+        <h2>4.サービスの利用について</h2>
+        <p>・本サービスは、ユーザーが正確な情報を入力することを前提としています。</p>
+        <p>・サービスの利用にあたり、ユーザーは自己責任で行動するものとします。</p>
+        <h2>5.免責事項について</h2>
+        <p>・本サービスの利用により発生した損害について、運営者は一切の責任を負いません。</p>
+        <p>・サービスの内容は予告なく変更される場合があります。</p>
+        <h2>6.利用規約の変更について</h2>
+        <p>・本利用規約は、運営者の判断により変更されることがあります。</p>
+        <p>・変更後の利用規約は、本サービス上に掲示された時点で効力を生じます。</p>
+        <h2>7.お問い合わせについて</h2>
+        <p>・本サービスに関するお問い合わせは、はるとまで</p>
+        <p>メール: kd1335524@st.kobedenshi.ac.jp</p>
+    </div>
+    <div class="modal-footer">
+      <button id="closeModalBtn" style="display:none;">閉じる</button>
+    </div>
+  </div>
+</div>
+  
+  <h2>ログイン</h2>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="ユーザー名" required>
+    <input type="password" id="password" placeholder="パスワード" required>  
+    <div id="correctionOptions">
+      <label class="radio-label">
+        <input type="radio" name="correction" value="あり"> 回答修正あり
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="correction" value="なし" checked> 回答修正なし
+      </label>
+    </div>
+
+    <button type="submit">ログイン</button>
+  </form>
+  <p id="message"></p>
+  <a href="registerPage.html">新規登録はこちら</a>
+
+  <script src="javascript/loginPage.js"></script>
+</body>
+</html>
