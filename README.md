@@ -9,43 +9,43 @@
 ```
 .
 ├── README.md
-│   ├── css
-│   │   ├── loginPage.css   // ログインページ用CSS
-|   |   ├── regiterPagePage.css   // 新規登録ページ用CSS
-|   |   ├── style.css   // 修正なしの面接ページ用CSS
-│   │   └── syusei.css      // 修正ありの面接ページ用CSS
-│   ├── javascript
-│   │   ├── loginPage.js       // ログインページ用Javascript
-│   │   ├── registerPage.js       // 新規登録ページ用Javascript
-│   │   ├── script.js       // 修正なしの面接ページ用Javascript
-│   │   └── syusei.js          // 修正有の面接ページ用Javascript
-│   ├── pictures               // 使用方法画像
-│   │   ├── 1.jpg
-│   │   ├── 2.jpg
-│   │   ├── 3.png
-│   │   ├── 4.png
-│   │   ├── 5.png
-│   │   ├── loading.gif
-│   │   ├── mensetubi.png
-│   │   ├── mensetukan.png
-│   │   ├── mensetukan2.png
-│   │   ├── s1.png
-│   │   ├── s2.png
-│   │   ├── s3.png
-│   │   ├── s4.png
-│   │   └── s5.png
-|   ├── .env   // Gemini APIキー設定
-│   ├── aiFeedback.js // フィードバック生成 
-|   ├── AImensetushu.xlsx // 質問集の管理
-|   ├── index.html // 修正なしの面接ページ用html
-|   ├── syusei.html // 修正ありの面接ページ用html
-|   ├── loginPage.html // ログインページ用html
-|   ├── registerPage.html // 新規登録ページ用html
-|   ├── server.js // バックエンドサーバー
-|   ├── package-lock.json //  プロジェクトの依存関係
-|   ├── package.json // プロジェクトのメタデータ
-|   ├── users.txt    // ユーザー・パスワード管理用
-└──
+├── css
+│   ├── loginPage.css   // ログインページ用CSS
+|   ├── regiterPagePage.css   // 新規登録ページ用CSS
+|   ├── style.css   // 修正なしの面接ページ用CSS
+│   └── syusei.css      // 修正ありの面接ページ用CSS
+├── javascript
+│   ├── loginPage.js       // ログインページ用Javascript
+│   ├── registerPage.js       // 新規登録ページ用Javascript
+│   ├── script.js       // 修正なしの面接ページ用Javascript
+│   └── syusei.js          // 修正有の面接ページ用Javascript
+├── pictures // 使用方法画像
+│   ├── 1.jpg
+│   ├── 2.jpg
+│   ├── 3.png
+│   ├── 4.png
+│   ├── 5.png
+│   ├── loading.gif
+│   ├── mensetubi.png
+│   ├── mensetukan.png
+│   ├── mensetukan2.png
+│   ├── s1.png
+│   ├── s2.png
+│   ├── s3.png
+│   ├── s4.png
+│   └── s5.png
+├── .env   // Gemini APIキー設定
+├── aiFeedback.js // フィードバック生成 
+├── AImensetushu.xlsx // 質問集の管理
+├── index.html // 修正なしの面接ページ用html
+├── syusei.html // 修正ありの面接ページ用html
+├── loginPage.html // ログインページ用html
+├── registerPage.html // 新規登録ページ用html
+├── server.js // バックエンドサーバー
+├── package-lock.json //  プロジェクトの依存関係
+├── package.json // プロジェクトのメタデータ
+└── users.txt    // ユーザー・パスワード管理用
+
 ```
 
 ---
