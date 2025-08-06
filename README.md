@@ -34,7 +34,7 @@
 │   ├── s3.png
 │   ├── s4.png
 │   └── s5.png
-├── .env   // Gemini APIキー設定
+├── .env.example   // Gemini APIキー設定
 ├── aiFeedback.js // フィードバック生成 
 ├── AImensetushu.xlsx // 質問集の管理
 ├── index.html // 修正なしの面接ページ用html
