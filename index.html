@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<title>面接対策アプリ</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<h1>面接対策アプリ</h1>
+<div id="loadingSpinner">
+  <img src="pictures\loading.gif" alt="Loading..." style="width:250px; height:150px;">
+</div>
+<div id="questionBox">質問を読み込み中...</div>
+<div id="answerText"></div>
+<video autoplay="" id="video" muted=""></video><br/>
+<!--ユーザー名表示のみ-->
+<div class="circle-container">
+  <div id="usernameLabel" class="username-label">${filename}</div>
+</div>
+<!-- アイコン左にカレンダーボタンを追加 -->
+<div id="calendarContainer">
+  <button id="calendarBtn">📅 面接日</button>
+  <input type="date" id="calendarInput" style="display: none;" />
+  <div id="daysRemaining" style="display: none;"></div>
+</div>
+<button id="operation">使用方法</button>
+<div id="operationModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" class="close">×</span>
+    <h1>使用方法</h1>
+    <div class="modal-body">
+        <p>1.面接日ボタンを押し最短の面接日を設定します</p>
+        <img src="pictures\mensetubi.png" alt="使用方法の画像" style="width:100%; max-width:300px; margin:10px 0;">
+        <p>2.面接官ありボタンを押し面接官の表示を切り替えることができ面接開始ボタンを押します</p>
+        <img src="pictures\1.jpg" alt="使用方法の画像" style="width:100%; max-width:300px; margin:10px 0;">
+        <p>3.マイクで答えるボタンを押し質問に答える</p>
+        <img src="pictures\2.png" alt="使用方法の画像" style="width:100%; max-width:300px; margin:10px 0;">
+        <p>4.話し終えたらもう一度押してくださいボタンを押すと自分の回答が表示されます</p>
+        <img src="pictures\3.png" alt="使用方法の画像" style="width:100%; max-width:300px; margin:10px 0;">
+        <p>5.質問と回答を保存ボタンを押すと現在の質問と答えが保存されているExselをがダウンロードされます</p>
+        <img src="pictures\4.png" alt="使用方法の画像" style="width:100%; max-width:300px; margin:10px 0;">
+        <p>6.もう一回ボタンを押すと再度面接が始まります</p>
+        <img src="pictures\5.png" alt="使用方法の画像" style="width:100%; max-width:300px; margin:10px 0;">
+    </div>
+  </div>
+</div>
+
+
+<button id="toggleInterviewerBtn">👤 面接官あり</button>
+<div id="interviewerOptions" style="display:none;">
+<button id="maleBtn">男性</button>
+<button id="femaleBtn">女性</button>
+</div>
+<img id="interviewerImage" style="display:none;"/>
+<button id="startInterviewBtn">面接開始</button>
+<button id="exportBtn" style="display:none;">📄 質問と回答を保存</button>
+<button id="micBtn">🎤 マイクで答える</button>
+<button id="restartBtn" style="display:none;">🔁 もう一回</button>
+<script src="javascript/script.js"></script>
+</body>
+</html>
