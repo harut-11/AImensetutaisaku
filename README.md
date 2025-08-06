@@ -7,7 +7,7 @@
 ## 本プロジェクトのディレクトリツリー
 
 ```
-.
+.AImensetutaisaku
 ├── README.md
 ├── css
 │   ├── loginPage.css   // ログインページ用CSS
