@@ -1,0 +1,263 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 1px 2px; /* 上下のパディングを10pxに変更 */
+  position: relative;
+  top: -10px; /* 全体を上に10pxずらす */
+}
+h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+video {
+  width: 30%;
+  height: auto;
+  background: #999;
+  margin: 10px auto;
+  display: block;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/*使用方法*/
+#operation {
+  background-color: #0800ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: absolute; 
+  top: 10px; 
+  left: 0px; 
+  width: 85px;
+  height: 45px;
+  font-size: 10px;
+}
+
+/*説明ページ*/
+.modal {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  padding: 15px;
+  z-index: 1000;
+  height: 550px;
+  width: 250px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  position: fixed;
+  overflow-y: auto /* スクロール可能にする */;
+}
+
+.modal-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body {
+  overflow-y: auto;
+  flex-grow: 1;
+  margin-top: 1px; /* ヘッダと×に空間を確保 */
+  padding-right: 5px; /* スクロールバーが被らないように */
+}
+
+
+.close {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* 面接官ありボタンのスタイル */
+#toggleInterviewerBtn {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+#toggleInterviewerBtn:hover {
+  background-color: #0c7211;
+}
+
+/* 面接官ありボタンが押されたときのスタイル */
+#interviewerOptions {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  z-index: 101;
+  display: flex;
+  gap: 10px;
+}
+
+#interviewerOptions button {
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 面接官の画像 */
+#interviewerImage {
+  display: none;
+  
+  width: 30%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+
+
+#video.small {
+  position: absolute;
+  top: 145px;
+  left: 444px;
+  width: 8%;
+  height: auto;
+  z-index: 1000;
+  
+}
+
+/* 終了するボタン */
+#exitBtn {
+  margin: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#exitBtn:hover {
+  background-color: #d32f2f;
+}
+
+/* もう一回ボタン */
+#restartBtn {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restartBtn:hover {
+  background-color: #1976D2;
+}
+
+
+/*アイコン表示*/
+.circle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px; /* 幅を固定 */
+  height: 50px; /* 高さも同じに */
+  border-radius: 50%; /* 完全な円にする */
+  background-color: lightblue;
+  z-index: 1000;
+  text-align: center;
+  display: flex; /* 中央寄せにするため */
+  align-items: center; /* 縦方向中央 */
+  justify-content: center; /* 横方向中央 */
+  overflow: hidden; /* 中身がはみ出さないように */
+}
+
+/* アイコンの文字 */
+.username-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 4px;
+  word-break: break-word; /* 長い名前を折り返し */
+}
+
+
+/* カレンダー表示 */
+#calendarContainer {
+  position: fixed;
+  top: 10px;
+  right: 80px; /* アイコンの左に配置 */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 面接日程ボタン */
+#calendarBtn {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* カレンダー入力フィールド */
+#calendarInput {
+  margin-top: 5px;
+}
+
+/* カレンダーの選択肢 */
+#daysRemaining {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+}
+
+#loadingSpinner {
+  display: none; /* 初期状態では非表示 */
+  top: -6%;
+  left: 40%;
+  position: absolute;
+  z-index: 200000;
+}
+
+/*面接開始*/
+#startInterviewBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#startInterviewBtn:hover {
+  background-color: #388E3C;
+}
