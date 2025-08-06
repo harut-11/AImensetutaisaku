@@ -72,8 +72,6 @@
 2.  **依存関係のインストール**
 
     ```bash
-    npm install
-
     npm install express
     ```
 
