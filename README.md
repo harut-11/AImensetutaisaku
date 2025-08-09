@@ -63,8 +63,18 @@
 このプロジェクトを実行するために必要なソフトウェアやツールを記載します。
 - パソコン(Windows, macOS)
 - Visual Studio Code(推奨エディタ) (Visual Studio Codeが未インストールの場合は、[こちら](https://code.visualstudio.com/download))
-- Node.js (v20.15.0)（未インストールの場合は、[こちら](https://nodejs.org/en/download)）
+- Node.js (v20.15.0)
 
+#### Node.jsのインストール方法
+1.[Node.js公式サイト](https://nodejs.org/en/download)にアクセスします。
+2.推奨版(LTS)をダウンロードしてください（本プロジェクトでは v20.15.0を推奨）
+3.インストーラーの指示に従ってインストールします。
+4.インストール後、ターミナルでは以下のコマンドを実行して、バージョンが表示されればOKです。
+
+``` bash
+node -v
+npm -v
+```
 ### 手順
 
 1.  **リポジトリのクローン**
@@ -73,14 +83,8 @@
     git clone [https://github.com/あなたのユーザー名/あなたのリポジトリ名.git](https://github.com/あなたのユーザー名/あなたのリポジトリ名.git)
     cd あなたのリポジトリ名
     ```
-
-2.  **依存関係のインストール**
-
-    ```bash
-    npm install express
-    ```
-
-3.  **.envファイルの設定**
+   
+2.  **.envファイルの設定**
 
     `.env.example`を参考に、プロジェクトのルートディレクトリに`.env`ファイルを作成し、APIキーなどの環境変数を設定してください。
 
@@ -88,7 +92,20 @@
     GEMINI_API_KEY=あなたのAPIキー
     ```
 
-4.  **アプリケーションの起動**
+3. **必要なパッケージをインストール**
+
+   ```bash
+   npm install
+   ```
+   
+4.  **依存関係のインストール**
+
+    ```bash
+    npm install express
+    ```
+       
+
+5.  **アプリケーションの起動**
 
     以下のコマンドでアプリケーションを起動します。
 
