@@ -63,7 +63,7 @@
 このプロジェクトを実行するために必要なソフトウェアやツールを記載します。
 - パソコン(Windows, macOS)
 - Visual Studio Code(推奨エディタ) (Visual Studio Codeが未インストールの場合は、[こちら](https://code.visualstudio.com/download))
-- Node.js (v20.15.0) ([Node.js] (https://nodejs.org/en/download))
+- Node.js (v20.15.0)（未インストールの場合は、[こちら](https://nodejs.org/en/download)）
 
 ### 手順
 
@@ -108,8 +108,9 @@
 ## アプリの特徴
 1.こちらがログイン画面になります。
 ![ログイン画像](pictures/login.png)
-
-
+2.新規登録はこちらをクリックするとユーザー名とパスワードを設定できます。
+![新規登録画像](pictures/sinki.png)
+3.ログインすると使用方法ボタンを押すとそれぞれの操作方法がわかります。
 ---
 
 ## 技術スタック
