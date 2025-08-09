@@ -61,8 +61,9 @@
 ### 前提条件
 
 このプロジェクトを実行するために必要なソフトウェアやツールを記載します。
-
-- Node.js (v20.15.0)
+- パソコン(Windows, macOS)
+- Visual Studio Code(推奨エディタ) (Visual Studio Codeが未インストールの場合は、[こちら](https://code.visualstudio.com/download))
+- Node.js (v20.15.0) ([Node.js] (https://nodejs.org/en/download))
 
 ### 手順
 
