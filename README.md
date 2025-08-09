@@ -62,7 +62,7 @@
 
 このプロジェクトを実行するために必要なソフトウェアやツールを記載します。
 - パソコン(Windows, macOS)
-- Visual Studio Code(推奨エディタ) (Visual Studio Codeが未インストールの場合は、[こちら](https://code.visualstudio.com/download))
+- Visual Studio Code(推奨エディタ) → Visual Studio Codeが未インストールの場合は、[こちら](https://code.visualstudio.com/download)
 - Node.js (v20.15.0)
 
 #### Node.jsのインストール方法
