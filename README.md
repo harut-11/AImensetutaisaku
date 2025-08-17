@@ -85,7 +85,7 @@ npm -v
     ```
 2.  **.Gemini API キーの作成**
 
-    `以下のURLからGemini API キーを作成してください。
+    以下のURLからGemini API キーを作成してください。
 
     [Gemini API キーの作成](https://ai.google.dev/gemini-api/docs?hl=)
 3.  **.envファイルの設定**
