@@ -83,11 +83,11 @@ npm -v
     git clone [https://github.com/あなたのユーザー名/あなたのリポジトリ名.git](https://github.com/あなたのユーザー名/あなたのリポジトリ名.git)
     cd あなたのリポジトリ名
     ```
-2.  **.Gemini APIキーの作成**
+2.  **.Gemini API キーの作成**
 
-    `以下のURLからGemini API KEyを作成してください。
+    `以下のURLからGemini API キーを作成してください。
 
-    [Gemini API Keyの作成](https://ai.google.dev/gemini-api/docs?hl=)
+    [Gemini API キーの作成](https://ai.google.dev/gemini-api/docs?hl=)
 3.  **.envファイルの設定**
 
     `.env.example`を参考に、プロジェクトのルートディレクトリに`.env`ファイルを作成し、APIキーなどの環境変数を設定してください。
