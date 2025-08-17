@@ -83,8 +83,12 @@ npm -v
     git clone [https://github.com/あなたのユーザー名/あなたのリポジトリ名.git](https://github.com/あなたのユーザー名/あなたのリポジトリ名.git)
     cd あなたのリポジトリ名
     ```
-   
-2.  **.envファイルの設定**
+2.  **.Gemini APIキーの作成**
+
+    `以下のURLからGemini API KEyを作成してください。
+
+    [Gemini API Keyの作成](https://ai.google.dev/gemini-api/docs?hl=)
+3.  **.envファイルの設定**
 
     `.env.example`を参考に、プロジェクトのルートディレクトリに`.env`ファイルを作成し、APIキーなどの環境変数を設定してください。
 
@@ -92,13 +96,13 @@ npm -v
     GEMINI_API_KEY=あなたのAPIキー
     ```
 
-3. **必要なパッケージをインストール**
+4. **必要なパッケージをインストール**
 
    ```bash
    npm install
    ```
    
-4.  **アプリケーションの起動**
+5.  **アプリケーションの起動**
 
     以下のコマンドでアプリケーションを起動します。
 
