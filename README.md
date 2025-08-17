@@ -134,12 +134,17 @@ npm -v
 
 このプロジェクトで使われている主要な技術をリストアップします。
 
-| カテゴリ           | 技術・ライブラリ        |
-| -------------- | ----------------------- |
-| フロントエンド | HTML, CSS, JavaScript   |
-| バックエンド   | Node.js (Express)       |
-| ライブラリ     | bcrypt, dotenv 等 |
-| API            | Gemini API              |
+| カテゴリ             | 技術・ライブラリ　　　　　　　　　　　　　　　　　　　　 |
+|----------------------|------------------------------------------------------------------|
+| フロントエンド        | HTML, CSS, JavaScript                                             |
+| バックエンド          | Node.js (Express)                                                 |
+| ライブラリ            | bcrypt, dotenv, file-saver, archiver                              |
+| Excel操作            | SheetJS（xlsx-style / sheetjs-style）                             |
+| Word生成             | docx                                                               |
+| 音声認識              | Web Speech API                                                    |
+| AI                    | Gemini API　　　　　　　　　　　　　                               |
+| カメラ/メディア操作   | MediaDevices.getUserMedia　　　　　　　　　　                        |
+
 
 ---
 
