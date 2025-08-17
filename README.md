@@ -83,7 +83,7 @@ npm -v
     git clone [https://github.com/あなたのユーザー名/あなたのリポジトリ名.git](https://github.com/あなたのユーザー名/あなたのリポジトリ名.git)
     cd あなたのリポジトリ名
     ```
-2.  **.Gemini API キーの作成**
+2.  **Gemini API キーの作成**
 
     以下のURLからGemini API キーを作成してください。
 
