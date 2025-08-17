@@ -138,7 +138,7 @@ npm -v
 | -------------- | ----------------------- |
 | フロントエンド | HTML, CSS, JavaScript   |
 | バックエンド   | Node.js (Express)       |
-| ライブラリ     | bcrypt, dotenv, pandas 等 |
+| ライブラリ     | bcrypt, dotenv 等 |
 | API            | Gemini API              |
 
 ---
