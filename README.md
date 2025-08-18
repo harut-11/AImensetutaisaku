@@ -38,7 +38,8 @@
 │   ├── s3.png
 │   ├── s4.png
 │   └── s5.png
-├── .env.example   (Gemini APIキー設定）
+├── .env.example   (.envの作成参考ファイル）
+├── .env   (Gemini APIキー設定）※各自作成
 ├── aiFeedback.js （フィードバック生成）
 ├── AImensetushu.xlsx （質問集の管理）
 ├── index.html （修正なしの面接ページ用html）
@@ -48,7 +49,7 @@
 ├── server.js （バックエンドサーバー）
 ├── package-lock.json （プロジェクトの依存関係）※各自作成
 ├── package.json （プロジェクトのメタデータ）※各自作成
-└── users.txt    （ユーザー・パスワード管理用）※各自作成
+└── users.txt    （ユーザー・パスワード管理用）
 
 ```
 
