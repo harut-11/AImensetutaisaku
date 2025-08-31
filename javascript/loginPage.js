@@ -46,6 +46,7 @@ function getCookie(name) {
     return null;
 }
 
+// モーダルの表示とスクロール検出
 window.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('operationModal');
   const modalBody = document.getElementById('modalBody');
@@ -64,8 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
     modal.style.transform = 'translate(-50%, -50%)';
     modalBody.scrollTop = 0;
 
-    // モーダルを表示したことを記録（365日間有効）
-    setCookie('seenModal', 'true', 365);
+    
   }
 
   modalBody.addEventListener('scroll', () => {
@@ -78,8 +78,12 @@ window.addEventListener('DOMContentLoaded', () => {
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
     overlay.style.display = 'none';
+
+    // モーダルを表示したことを記録（365日間有効）
+    setCookie('seenModal', 'true', 365);
   });
 });
+
 
 
 
