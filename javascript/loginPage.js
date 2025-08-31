@@ -64,10 +64,9 @@ window.addEventListener('DOMContentLoaded', () => {
     modal.style.left = '50%';
     modal.style.transform = 'translate(-50%, -50%)';
     modalBody.scrollTop = 0;
-
-    
   }
 
+  // スクロールで閉じるボタンを出す処理
   modalBody.addEventListener('scroll', () => {
     const isBottom = modalBody.scrollTop + modalBody.clientHeight >= modalBody.scrollHeight - 5;
     if (isBottom) {
@@ -75,11 +74,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 閉じるボタンを押したときにCookie保存
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
     overlay.style.display = 'none';
 
-    // モーダルを表示したことを記録（365日間有効）
+    // モーダルを閉じたことを記録（365日間有効）
     setCookie('seenModal', 'true', 365);
   });
 });
