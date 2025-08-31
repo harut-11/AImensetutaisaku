@@ -55,7 +55,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Cookieで初回表示かどうかを判定
   const hasSeenModal = getCookie('seenModal');
 
-  if (modal && overlay) {
+  // Cookieが無い場合のみモーダルを表示
+  if (!hasSeenModal && modal && overlay) {
     modal.style.display = 'block';
     overlay.style.display = 'block';
     modal.style.top = '50%';
@@ -79,6 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
     overlay.style.display = 'none';
   });
 });
+
 
 
 
