@@ -2,21 +2,15 @@
 let maleVoice = null;
 let femaleVoice = null;
 let currentVoiceType = 'default';
-
-function setVoices() {
-  const voices = speechSynthesis.getVoices();
-  maleVoice = voices.find(v => v.name.includes("Otoya") || v.name.includes("Ichiro"));
-  femaleVoice = voices.find(v => v.name.includes("Kyoko") || v.name.includes("Haruka") || v.name.includes("Google 日本語"));
-}
-speechSynthesis.onvoiceschanged = setVoices;
-
 let allQuestions = [];
 let currentQuestion = null;
 let recognizing = false;
 let recognition;
 let questionCount = 0;
-const maxQuestions = 6;
+let interviewerMode = false;
 
+
+const maxQuestions = 6;
 const micBtn = document.getElementById('micBtn');
 const editBtn = document.getElementById('editBtn');
 const completeBtn = document.getElementById('completeBtn');
@@ -27,12 +21,33 @@ const doneBtn = document.getElementById('doneBtn');
 const answerEdit = document.getElementById('answerEdit');
 const restartBtn = document.getElementById('restartBtn');
 const answers = [];
-
-// 初期状態では micBtn を無効化
-micBtn.disabled = `none`;
-editBtn.style.display =`none`;
 // 面接開始ボタンの処理
 const startBtn = document.getElementById('startInterviewBtn');
+// 面接官画像表示処理
+const maleBtn = document.getElementById('maleBtn');
+const femaleBtn = document.getElementById('femaleBtn');
+const video = document.getElementById('video');
+const image = document.getElementById('interviewerImage');
+// 面接官モード切替
+const toggleBtn = document.getElementById('toggleInterviewerBtn');
+const optionsBox = document.getElementById('interviewerOptions');
+const calendarBtn = document.getElementById('calendarBtn'); // カレンダーボタン
+const calendarInput = document.getElementById('calendarInput'); // カレンダー入力フィールド
+const daysRemaining = document.getElementById('daysRemaining'); // 残り日数表示要素
+
+calendarInput.style.display = 'none';
+
+function setVoices() {
+  const voices = speechSynthesis.getVoices();
+  maleVoice = voices.find(v => v.name.includes("Otoya") || v.name.includes("Ichiro"));
+  femaleVoice = voices.find(v => v.name.includes("Kyoko") || v.name.includes("Haruka") || v.name.includes("Google 日本語"));
+}
+
+speechSynthesis.onvoiceschanged = setVoices;
+// 初期状態では micBtn を無効化
+micBtn.disabled = `false`;
+editBtn.style.display =`none`;
+
 startBtn.addEventListener('click', () => {
   micBtn.disabled = false;
   questionBox.disabled = `false`;
@@ -326,11 +341,7 @@ exportBtn.addEventListener('click', async () => {
 
 
 
-// 面接官画像表示処理
-const maleBtn = document.getElementById('maleBtn');
-const femaleBtn = document.getElementById('femaleBtn');
-const video = document.getElementById('video');
-const image = document.getElementById('interviewerImage');
+
 
 function showInterviewer(imageSrc) {
   image.src = imageSrc;
@@ -350,10 +361,7 @@ femaleBtn.addEventListener('click', () => {
   currentVoiceType = 'female';
 });
 
-// 面接官モード切替
-const toggleBtn = document.getElementById('toggleInterviewerBtn');
-const optionsBox = document.getElementById('interviewerOptions');
-let interviewerMode = false;
+
 
 toggleBtn.addEventListener('click', () => {
   interviewerMode = !interviewerMode;
@@ -438,10 +446,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-const calendarBtn = document.getElementById('calendarBtn'); // カレンダーボタン
-const calendarInput = document.getElementById('calendarInput'); // カレンダー入力フィールド
-const daysRemaining = document.getElementById('daysRemaining'); // 残り日数表示要素
-calendarInput.style.display = 'none';
+
 
 
 function saveInterviewDateToServer(username, dateStr) {
