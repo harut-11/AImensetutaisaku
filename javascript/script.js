@@ -30,8 +30,14 @@ const restartBtn = document.getElementById('restartBtn');
 const calendarBtn = document.getElementById('calendarBtn'); // カレンダーボタン
 const calendarInput = document.getElementById('calendarInput'); // カレンダー入力フィールド
 const daysRemaining = document.getElementById('daysRemaining'); // 残り日数表示要素
-
+// 面接開始ボタンの処理
+const startBtn = document.getElementById('startInterviewBtn');
 calendarInput.style.display = 'none';
+
+
+
+// 初期状態では micBtn を無効化
+micBtn.disabled = false;
 
 // 利用可能な音声一覧を取得し、指定の日本語音声をフィルタリング
 function setVoices() {
@@ -41,11 +47,6 @@ function setVoices() {
 }
 speechSynthesis.onvoiceschanged = setVoices; // 音声リストが更新されたときにsetVoicesを実行
 
-// 初期状態では micBtn を無効化
-micBtn.disabled = `false`;
-
-// 面接開始ボタンの処理
-const startBtn = document.getElementById('startInterviewBtn');
 startBtn.addEventListener('click', () => {
   micBtn.disabled = false;
   questionBox.disabled = `false`;
