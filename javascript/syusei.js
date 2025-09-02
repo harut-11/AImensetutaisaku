@@ -37,20 +37,22 @@ const daysRemaining = document.getElementById('daysRemaining'); // 残り日数�
 
 calendarInput.style.display = 'none';
 
+
+// 初期状態では micBtn を無効化
+micBtn.disabled = false;
+//micBtn.disabled = "false";
+editBtn.style.display =`none`;
+
 function setVoices() {
   const voices = speechSynthesis.getVoices();
   maleVoice = voices.find(v => v.name.includes("Otoya") || v.name.includes("Ichiro"));
   femaleVoice = voices.find(v => v.name.includes("Kyoko") || v.name.includes("Haruka") || v.name.includes("Google 日本語"));
 }
-
 speechSynthesis.onvoiceschanged = setVoices;
-// 初期状態では micBtn を無効化
-micBtn.disabled = `false`;
-editBtn.style.display =`none`;
 
 startBtn.addEventListener('click', () => {
   micBtn.disabled = false;
-  questionBox.disabled = `false`;
+  questionBox.disabled = false;
   startBtn.style.display = 'none'; // ボタンを非表示にする
   showRandomQuestion(); // 最初の質問を表示して読み上げ
 });
