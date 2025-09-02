@@ -3,7 +3,6 @@
 let maleVoice = null;
 let femaleVoice = null;
 let currentVoiceType = 'default';
-// 各種変数初期化
 let allQuestions = []; // Excelから読み込んだすべての質問
 let currentQuestion = null; // 現在の質問
 let recognizing = false; // 音声認識中かどうか
@@ -17,27 +16,20 @@ const questionBox = document.getElementById('questionBox'); // 質問表示領�
 const answerText = document.getElementById('answerText'); // 回答表示領域
 const exportBtn = document.getElementById('exportBtn'); // Excel出力ボタン
 const answers = []; // 質問・回答履歴の配列
-// 面接官画像と声の切り替え処理
 const maleBtn = document.getElementById('maleBtn');
 const femaleBtn = document.getElementById('femaleBtn');
 const video = document.getElementById('video');
 const image = document.getElementById('interviewerImage');
-// 面接官モードのON/OFF切り替え
 const toggleBtn = document.getElementById('toggleInterviewerBtn');
 const optionsBox = document.getElementById('interviewerOptions');
-// 面接の再スタート処理
 const restartBtn = document.getElementById('restartBtn');
 const calendarBtn = document.getElementById('calendarBtn'); // カレンダーボタン
 const calendarInput = document.getElementById('calendarInput'); // カレンダー入力フィールド
 const daysRemaining = document.getElementById('daysRemaining'); // 残り日数表示要素
-// 面接開始ボタンの処理
 const startBtn = document.getElementById('startInterviewBtn');
 calendarInput.style.display = 'none';
-
-
-
 // 初期状態では micBtn を無効化
-micBtn.disabled = false;
+micBtn.disabled = 'none';
 
 // 利用可能な音声一覧を取得し、指定の日本語音声をフィルタリング
 function setVoices() {
@@ -477,3 +469,4 @@ calendarInput.addEventListener('change', () => {
     calendarInput.style.display = 'none';
   }
 });
+
