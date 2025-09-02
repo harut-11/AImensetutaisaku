@@ -39,8 +39,7 @@ calendarInput.style.display = 'none';
 
 
 // 初期状態では micBtn を無効化
-micBtn.disabled = false;
-//micBtn.disabled = "false";
+micBtn.disabled = 'none';
 editBtn.style.display =`none`;
 
 function setVoices() {
@@ -540,3 +539,4 @@ calendarInput.addEventListener('change', () => {
     calendarInput.style.display = 'none';
   }
 });
+
