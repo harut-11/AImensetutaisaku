@@ -1,5 +1,6 @@
 # AI面接対策アプリ
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d438d976-5f17-4429-b4f5-f61eb786d97e" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4141bfff-ebf2-4837-945f-b65070f0e7a2" />
+
 
 # 開発理由
  就職活動中、面接練習をしたいけれど、こんな悩み有りませんか？
@@ -122,11 +123,11 @@ npm -v
 1.ブラウザで`http://localhost:3000`にアクセスします。
 
 2.こちらがログイン画面になります。
-![ログイン画像](pictures/login.png)
+<img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/2a6b6f3c-c409-47b2-980b-e372e680932b" />
 2.新規登録はこちらをクリックするとユーザー名とパスワードを設定できます。
-![新規登録画像](pictures/sinki.png)
+<img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/60c56e20-e02a-49e9-84a3-3636e67ec7fb" />
 3.ログインし使用方法ボタンを押すとそれぞれの操作方法がわかります。
-![操作画像](pictures/sousa.png)
+<img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/9552cf7b-3708-4386-94fe-3882b473336e" />
 4.面接が終わり質問と回答を保存ボタンを押しダウンロードされたWordを開くとこのようにフィードバックを閲覧できます。
 <img width="1916" height="1127" alt="image" src="https://github.com/user-attachments/assets/ddbb6abd-3ea3-4204-b5d4-9ae5f3cc0393" />
 
