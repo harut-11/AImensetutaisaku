@@ -124,10 +124,13 @@ npm -v
 
 2.こちらがログイン画面になります。
 <img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/2a6b6f3c-c409-47b2-980b-e372e680932b" />
+
 2.新規登録はこちらをクリックするとユーザー名とパスワードを設定できます。
 <img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/60c56e20-e02a-49e9-84a3-3636e67ec7fb" />
+
 3.ログインし使用方法ボタンを押すとそれぞれの操作方法がわかります。
 <img width="1919" height="946" alt="image" src="https://github.com/user-attachments/assets/9552cf7b-3708-4386-94fe-3882b473336e" />
+
 4.面接が終わり質問と回答を保存ボタンを押しダウンロードされたWordを開くとこのようにフィードバックを閲覧できます。
 <img width="1916" height="1127" alt="image" src="https://github.com/user-attachments/assets/ddbb6abd-3ea3-4204-b5d4-9ae5f3cc0393" />
 
