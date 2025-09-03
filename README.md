@@ -1,5 +1,6 @@
 # AI面接対策アプリ
-![キャッチコピー](pictures/hyousi.png)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d438d976-5f17-4429-b4f5-f61eb786d97e" />
+
 # 開発理由
  就職活動中、面接練習をしたいけれど、こんな悩み有りませんか？
 - 学生時代に就職活動で面接対策をしたいが一人で学校のキャリアセンターに行くのが不安
@@ -126,6 +127,9 @@ npm -v
 ![新規登録画像](pictures/sinki.png)
 3.ログインし使用方法ボタンを押すとそれぞれの操作方法がわかります。
 ![操作画像](pictures/sousa.png)
+4.面接が終わり質問と回答を保存ボタンを押しダウンロードされたWordを開くとこのようにフィードバックを閲覧できます。
+<img width="1916" height="1127" alt="image" src="https://github.com/user-attachments/assets/ddbb6abd-3ea3-4204-b5d4-9ae5f3cc0393" />
+
 ---
 
 ## 技術スタック
