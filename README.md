@@ -50,8 +50,8 @@
 ├── loginPage.html （ログインページ用html）
 ├── registerPage.html （新規登録ページ用html）
 ├── server.js （バックエンドサーバー）
-├── package-lock.json （プロジェクトの依存関係）※各自作成
-├── package.json （プロジェクトのメタデータ）※各自作成
+├── package-lock.json （プロジェクトの依存関係）
+├── package.json （プロジェクトのメタデータ）
 └── users.txt    （ユーザー・パスワード管理用）
 
 ```
