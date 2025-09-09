@@ -1,4 +1,3 @@
-// syusei.js
 let maleVoice = null;
 let femaleVoice = null;
 let currentVoiceType = 'default';
@@ -7,9 +6,11 @@ let currentQuestion = null;
 let recognizing = false;
 let recognition;
 let questionCount = 0;
-let interviewerMode = false;
+let interviewerMode = false;    
+let voiceInterval = null; // 音声再生中の画像切り替え用
 
-
+const maleVoiceImages = ['pictures/mensetukan1.png', 'pictures/mensetukanda.png'];  //男性音声用画像
+const femaleVoiceImages = ['pictures/mensetukan3.png', 'pictures/mensetukanda2.png']; //女性音声用画像
 const maxQuestions = 6;
 const micBtn = document.getElementById('micBtn');
 const editBtn = document.getElementById('editBtn');
@@ -88,8 +89,34 @@ function speakTextFromQuestionBox() {
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'ja-JP';
-  if (currentVoiceType === 'male' && maleVoice) utterance.voice = maleVoice;
-  else if (currentVoiceType === 'female' && femaleVoice) utterance.voice = femaleVoice;
+
+  if (currentVoiceType === 'male' && maleVoice) {
+    utterance.voice = maleVoice;
+  } else if (currentVoiceType === 'female' && femaleVoice) {
+    utterance.voice = femaleVoice;
+  }
+
+  // 音声が再生を開始したときの処理
+  utterance.onstart = () => {
+    let imageIndex = 0;
+    const imagesToUse = currentVoiceType === 'male' ? maleVoiceImages : femaleVoiceImages;
+    voiceInterval = setInterval(() => {
+      image.src = imagesToUse[imageIndex];
+      imageIndex = (imageIndex + 1) % imagesToUse.length;
+    }, 300); // 画像を切り替え
+  };
+
+  // 音声が再生を終了したときの処理
+  utterance.onend = () => {
+    clearInterval(voiceInterval); // 画像切り替えを停止
+    // 元の画像に戻す
+    if (currentVoiceType === 'male') {
+      image.src = maleVoiceImages[0];
+    } else if (currentVoiceType === 'female') {
+      image.src = femaleVoiceImages[0];
+    }
+  };
+
   speechSynthesis.speak(utterance);
 }
 
@@ -352,13 +379,15 @@ function showInterviewer(imageSrc) {
   video.style.zIndex = '1000';
 }
 
+// maleBtnのイベントリスナー
 maleBtn.addEventListener('click', () => {
-  showInterviewer('pictures/mensetukan.jpeg');
+  showInterviewer(maleVoiceImages[0]);
   currentVoiceType = 'male';
 });
 
+// femaleBtnのイベントリスナー
 femaleBtn.addEventListener('click', () => {
-  showInterviewer('pictures/mensetukan2.png');
+  showInterviewer(femaleVoiceImages[0]);
   currentVoiceType = 'female';
 });
 
@@ -539,4 +568,3 @@ calendarInput.addEventListener('change', () => {
     calendarInput.style.display = 'none';
   }
 });
-
