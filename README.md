@@ -152,7 +152,7 @@ npm -v
 | Word生成             | docx                                                               |
 | 音声認識              | Web Speech API                                                    |
 | AI                    | Gemini API　　　　　　　　　　　　　                               |
-| カメラ/メディア操作   | MediaDevices.getUserMedia　　　　　　　　　　                        |
+| カメラ/メディア操作   | MediaDevices, getUserMedia　　　　　　　　　　                        |
 
 
 ---
