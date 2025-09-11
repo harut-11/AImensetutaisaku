@@ -34,8 +34,10 @@
 │   ├── 5.png
 │   ├── loading.gif
 │   ├── mensetubi.png
-│   ├── mensetukan.png
-│   ├── mensetukan2.png
+│   ├── mensetukan1.png   (男性の面接官)
+│   ├── mensetukanda.png  (男性の面接官)
+│   ├── mensetukan3.png   (女性の面接官)
+│   ├── mensetukanda2.png   (女性の面接官)
 │   ├── s1.png
 │   ├── s2.png
 │   ├── s3.png
