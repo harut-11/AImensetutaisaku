@@ -68,6 +68,7 @@
 
 このプロジェクトを実行するために必要なソフトウェアやツールを記載します。
 - パソコン(Windows, macOS)
+- Google Chrome
 - Visual Studio Code(推奨エディタ) → Visual Studio Codeが未インストールの場合は、[こちら](https://code.visualstudio.com/download)
 - Node.js (v20.15.0)
 
@@ -123,7 +124,7 @@ npm -v
 
 アプリケーションの具体的な使い方や操作手順を説明します。
 
-1.ブラウザで`http://localhost:3000`にアクセスします。
+1.ブラウザ（Google Chrome）で`http://localhost:3000`にアクセスします。
 
 2.こちらがログイン画面になります。
 <img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/2a6b6f3c-c409-47b2-980b-e372e680932b" />
