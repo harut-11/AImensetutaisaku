@@ -130,7 +130,7 @@ npm -v
 3.  以下の行を見つけてください。
 
     ```batch
-    rem 'server.js' があるフォルダに移動します
+    rem 'AImensetutaisaku' があるフォルダに移動します
     cd /d "C:\AImensetutaisaku" ←　ここをあなたのフォルダパスに変更してください
     ```
 
